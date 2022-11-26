@@ -1,0 +1,13 @@
+version: "3.5"
+services:
+  node:
+    container_name: json-server
+    build:
+      context: ./
+    volumes:
+      - json_data:/node/app/
+
+volumes:
+  json_data:
+    name: json_data
+    driver: local

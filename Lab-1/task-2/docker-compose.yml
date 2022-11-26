@@ -1,0 +1,16 @@
+version: "3.5"
+services:
+  node:
+    container_name: lite-server
+    build:
+      context: ./
+    ports:
+      - 3000:3000
+      - 3001:3001
+    volumes:
+      - node_data:/node/app/
+
+volumes:
+  node_data:
+    name: node_data
+    driver: local
