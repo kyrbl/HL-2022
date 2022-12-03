@@ -1,0 +1,33 @@
+version: "3.9"
+services:
+  lite:
+    build:
+      context: ../task-2/
+    volumes:
+      - lite_data:/node/app/src
+
+  json:
+    build:
+      context: ../task-3/
+    volumes:
+      - json_data:/node/app/data
+
+  nginx:
+    build:
+      context: .
+    depends_on:
+      - lite
+      - json
+    ports:
+      - 3000:3000
+      - 3080:3080
+    volumes:
+      - nginx_data:/etc/nginx/conf.d
+
+volumes:
+  nginx_data:
+    name: nginx_data
+  lite_data:
+    name: lite_data
+  json_data:
+    name: json_data

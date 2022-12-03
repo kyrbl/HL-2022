@@ -1,5 +1,8 @@
 {
+  "dependencies": {
+    "lite-server": "latest"
+  },
   "scripts": {
-    "lite": "lite-server"
+    "lite": "lite-server -c configs/config.json"
   }
 }

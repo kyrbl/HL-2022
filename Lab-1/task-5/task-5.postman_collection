@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "7f180a62-dede-4cba-b49c-94dd63c6492b",
+		"name": "HL-2022-Lab1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10679791"
+	},
+	"item": [
+		{
+			"name": "Get lite-server front page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get json-server posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3080/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3080",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add json-server post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"id\": 2 }\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3080/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3080",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add json-server comments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"id\": 2 }\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3080/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3080",
+					"path": [
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get json-server comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3080/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3080",
+					"path": [
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get json-serer front page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3080",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3080"
+				}
+			},
+			"response": []
+		}
+	]
+}

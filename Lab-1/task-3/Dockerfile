@@ -2,6 +2,6 @@ FROM node:slim
 
 WORKDIR /node/app
 COPY ./node-files/ ./
-RUN npm install lite-server
+RUN npm install
 
-CMD ["npm", "run", "lite"]
+CMD ["npm", "run", "json"]
